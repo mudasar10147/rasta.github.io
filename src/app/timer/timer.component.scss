@@ -30,3 +30,10 @@
 .timeBox{
     display: grid;
 }
+@media only screen and (max-width: 600px) {
+    .timer span{
+        margin: 10px 6px;
+        padding: 20px 15px;
+        font-size: 30px;
+    }
+}
