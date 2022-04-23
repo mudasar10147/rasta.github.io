@@ -10,7 +10,7 @@ export class TimerComponent implements OnInit {
   private subscription: Subscription;
   
   public dateNow = new Date();
-  public dDay = new Date('April 24 2022 00:00:00');
+  public dDay = new Date('April 24 2022 22:00:00');
   milliSecondsInASecond = 1000;
   hoursInADay = 24;
   minutesInAnHour = 60;
@@ -30,7 +30,8 @@ export class TimerComponent implements OnInit {
 
   private getTimeDifference () {
       this.timeDifference = this.dDay.getTime() - new  Date().getTime();
-      this.allocateTimeUnits(this.timeDifference);
+      if(this.timeDifference<0){}else{
+      this.allocateTimeUnits(this.timeDifference);}
   }
 
 private allocateTimeUnits (timeDifference:any) {
