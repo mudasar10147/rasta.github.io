@@ -10,7 +10,7 @@ export class TimerComponent implements OnInit {
   private subscription: Subscription;
   
   public dateNow = new Date();
-  public dDay = new Date('June 01 2022 22:00:00');
+  public dDay = new Date('July 01 2022 22:00:00');
   milliSecondsInASecond = 1000;
   hoursInADay = 24;
   minutesInAnHour = 60;
